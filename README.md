@@ -28,7 +28,7 @@ The backend health endpoint only checks HTTP liveness, not database readiness. B
 
 ## Dashboard
 
-UI guidance and interaction rules are documented in `design-system/flashlock/MASTER.md`, using UI UX Pro Max recommendations. Dashboard copy is in Indonesian; API contracts and technical statuses stay unchanged.
+Dashboard copy is in Indonesian. API contracts and technical statuses use English.
 
 - **Initialize 100 Stock** creates a fresh sale; it does not delete older sales.
 - **Fire 1,000 Concurrent Buyers** reserves random quantities of 1 or 2. 70% of successful holds initiate payment; 30% abandon carts. Abandoned stock is reclaimed after the default 300-second hold TTL.

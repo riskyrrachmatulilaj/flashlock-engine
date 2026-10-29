@@ -2,7 +2,7 @@
 
 ## 1. Tech Stack Lock
 
-AI coding agents MUST strictly adhere to these libraries and versions. Do not introduce alternative ORMs, HTTP frameworks, or state libraries.
+The backend uses Fastify, Redis Lua scripts, and PostgreSQL. The dashboard runs separately with Vite and React.
 
 * **Runtime & Language:** Node.js (v22 LTS) + TypeScript 5.x (`strict: true`)
 * **HTTP Framework:** Fastify v5.x (chosen for low-overhead JSON serialization and high throughput)
@@ -21,7 +21,6 @@ AI coding agents MUST strictly adhere to these libraries and versions. Do not in
 flashlock-engine/
 ├── PRD.md                        # Product Requirements & Invariants
 ├── ARCHITECTURE.md               # System Blueprint (This file)
-├── TODO.md                       # Atomic Vertical Slice Tracker
 ├── docker-compose.yml            # Redis + PostgreSQL local containers
 ├── package.json
 ├── tsconfig.json
